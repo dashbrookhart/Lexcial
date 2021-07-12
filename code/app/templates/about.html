@@ -1,0 +1,142 @@
+<!-- https://www.w3schools.com/howto/howto_css_about_page.asp-->
+{% block navbar %} {% include 'navbar.html' %} {% endblock %} {% block content
+%}
+<link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}" />
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>
+    This Text Semantic Similarity App uses a trained Natural Language Processing
+    model to determine if two text entry answers are semantically the same.
+  </p>
+  <p>
+    The idea for this app started in an attempt to solve a common problem we saw
+    for professors in our Data Science program of trying to grade text answers.
+    Grading manually is a hassle, and any current text autograder simply do not
+    work. This product lets teachers spend more energy teaching and less time
+    grading.
+  </p>
+  <a href="index"> Return to Home Page</a>
+</div>
+
+<h2 style="text-align:center">The Dream Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/catie.png" alt="catie" style="width:100%" />
+      <div class="container">
+        <h2>Catie Cronister</h2>
+        <p class="title">CEO</p>
+        <p>
+          Catie has a background in Mathematics and Biology and enjoys playing
+          beach volleyball in her free time.
+        </p>
+        <p>ctcronister@dons.usfca.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/lucia.jpg" alt="lucia" style="width:100%" />
+      <div class="container">
+        <h2>Lucia Page-Harley</h2>
+        <p class="title">CTO</p>
+        <p>
+          Lucia comes from a research neuroscience background and is looking
+          forward to applying her experimentation skills to the business world.
+          When she's not on the job, she is probably playing with her pandemic
+          puppy, Lenny!
+    	</p>
+        <p>lpageharley@dons.usfca.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/veeral.jpg" alt="veeral" style="width:100%" />
+      <div class="container">
+        <h2>Veeral Shah</h2>
+        <p class="title">Engineer</p>
+        <p>
+          Veeral has a background in Math and Economics. When he isn't coding,
+          Veeral enjoys playing ultimate frisbee and watching basketball.
+        </p>
+        <p>vshah3@dons.usfca.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/remi.png" alt="remi" style="width:100%" />
+      <div class="container">
+        <h2>Remi LeBlanc</h2>
+        <p class="title">Engineer</p>
+        <p>Hi I'm Remi.</p>
+        <p>rwleblanc@dons.usfca.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/dash.jpg" alt="dash" style="width:100%" />
+      <div class="container">
+        <h2>Dashiell Brookhart</h2>
+        <p class="title">Data Scientist</p>
+        <p>Hi I'm Dash.</p>
+        <p>dsbrookhart@dons.usfca.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/min.png" alt="veeral" style="width:100%" />
+      <div class="container">
+        <h2>Min Che</h2>
+        <p class="title">Data Scientist</p>
+        <p>I'm Min.</p>
+        <p>mche2@dons.usfca.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/josh.jpg" alt="josh" style="width:100%" />
+      <div class="container">
+        <h2>Josh Majano</h2>
+        <p class="title">Data Scientist</p>
+        <p>Hi I'm Josh.</p>
+        <p>jamajano@dons.usfca.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/emre.jpg" alt="emre" style="width:100%" />
+      <div class="container">
+        <h2>Emre Okcular</h2>
+        <p class="title">Data Scientist</p>
+        <p>Hi I'm Emre.</p>
+        <p>eokcular@dons.usfca.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

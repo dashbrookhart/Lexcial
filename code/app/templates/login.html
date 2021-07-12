@@ -1,0 +1,19 @@
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock %} {% block content
+    %}
+<html>
+<h1 style="padding: 20px">Login</h1>
+
+<div class="container" style="padding: 20px">
+    <form method="POST">
+        {{ form.csrf_token }}
+        {{ form.username.label}} {{form.username()}} <br/>
+        {{ form.password.label}} {{form.password()}}<br/>
+        {{ form.submit()}}
+
+    </form>
+</br>
+</div> <!-- /container -->
+
+</html>
+{% endblock %}
